@@ -114,6 +114,14 @@ export function IconArrowRight(props: SVGProps<SVGSVGElement>) {
   );
 }
 
+export function IconCheck(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M5 12.5l4.5 4.5L19 6.5" />
+    </svg>
+  );
+}
+
 export function IconWarning(props: SVGProps<SVGSVGElement>) {
   return (
     <svg {...base} {...props}>

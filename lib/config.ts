@@ -21,4 +21,4 @@ export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID ?? "";
 
 // Respuesta editable para la pregunta de cuenta en el FAQ.
 export const FAQ_ACCOUNT_ANSWER =
-  "No es necesario crear una cuenta para comenzar. Podrás explorar la aplicación y, cuando lo desees, guardar tu progreso de forma sencilla.";
+  "El acceso es por invitación con tu correo previamente autorizado, así que no necesitas registrarte. Dentro de la aplicación podrás guardar tu progreso de forma sencilla.";

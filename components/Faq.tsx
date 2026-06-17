@@ -14,6 +14,10 @@ type FaqItem = {
 
 const items: FaqItem[] = [
   {
+    q: "¿Cómo accedo a la beta privada?",
+    a: "El acceso es por invitación. CresiMotion habilita previamente tu correo y te envía la invitación; solo necesitas seguir los pasos de esta página para entrar.",
+  },
+  {
     q: "¿Por qué necesito Expo Go?",
     a: "Actualmente CresiMotion utiliza Expo Go para facilitar el acceso a nuevas funcionalidades y mejoras continuas.",
   },

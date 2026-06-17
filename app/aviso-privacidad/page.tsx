@@ -70,10 +70,10 @@ export default function AvisoPrivacidad() {
             </Section>
 
             <Section title="6. Tus derechos">
-              Puedes solicitar el acceso, rectificación, cancelación u oposición
-              al tratamiento de tus datos personales, así como revocar tu
-              consentimiento en cualquier momento, escribiéndonos a través de
-              nuestro correo de contacto.
+              Puedes ejercer tus derechos de acceso, rectificación, cancelación
+              u oposición al tratamiento de tus datos personales, así como
+              revocar tu consentimiento en cualquier momento, escribiéndonos a
+              través de nuestro correo de contacto.
             </Section>
 
             <Section title="7. Contacto">

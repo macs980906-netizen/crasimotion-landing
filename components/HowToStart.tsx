@@ -23,13 +23,14 @@ export default function HowToStart() {
       <div className="mx-auto max-w-3xl px-4 sm:px-6">
         <Reveal className="text-center">
           <p className="text-sm font-semibold uppercase tracking-wide text-brand-green">
-            Cómo comenzar
+            Acceso a la beta privada
           </p>
           <h2 className="mt-3 text-3xl font-bold tracking-tight sm:text-4xl">
             Comienza en pocos minutos
           </h2>
           <p className="mt-4 text-lg text-slate-300">
-            Para acceder a CresiMotion sigue estos pasos.
+            Tu correo ya fue autorizado por CresiMotion. Sigue estos pasos para
+            entrar.
           </p>
         </Reveal>
 
@@ -75,8 +76,8 @@ export default function HowToStart() {
             />
             <MiniStep
               n={3}
-              title="Presiona “Comenzar ahora”"
-              text="La app se abrirá en Expo Go."
+              title="Accede a la beta privada"
+              text="Toca el botón y la app se abrirá en Expo Go."
             />
           </div>
         </Reveal>
@@ -98,9 +99,13 @@ export default function HowToStart() {
               onClick={() => trackEvent("click_comenzar")}
               className="group relative mt-7 inline-flex w-full items-center justify-center gap-3 rounded-full bg-brand-green px-10 py-5 text-xl font-bold text-white shadow-xl shadow-brand-green/30 transition-all hover:bg-brand-green-dark hover:shadow-2xl focus-visible:outline-white sm:w-auto"
             >
-              Comenzar ahora
+              Acceder a la Beta Privada
               <IconArrowRight className="h-6 w-6 transition-transform group-hover:translate-x-1" />
             </a>
+
+            <p className="relative mt-4 text-xs font-medium uppercase tracking-wide text-slate-400">
+              Acceso por invitación · Participación limitada
+            </p>
 
             {/* Aviso importante (compacto, dentro del bloque CTA) */}
             <div

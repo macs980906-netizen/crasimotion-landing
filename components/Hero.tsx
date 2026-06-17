@@ -1,6 +1,12 @@
 import Reveal from "./Reveal";
 import PhoneMockup from "./PhoneMockup";
-import { IconPulse, IconRoute, IconCommunity, IconArrowRight } from "./Icons";
+import {
+  IconPulse,
+  IconRoute,
+  IconCommunity,
+  IconArrowRight,
+  IconCheck,
+} from "./Icons";
 
 const indicators = [
   { icon: IconPulse, label: "Diagnóstico emocional" },
@@ -18,8 +24,9 @@ export default function Hero() {
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 pb-16 sm:px-6 lg:grid-cols-2 lg:gap-8 lg:pb-24">
         {/* Columna de texto */}
         <div className="animate-slideUp text-center lg:text-left">
-          <span className="inline-flex items-center rounded-full bg-brand-green/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-brand-green-dark">
-            Plataforma de transformación emocional
+          <span className="inline-flex items-center gap-2 rounded-full bg-brand-green/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-brand-green-dark">
+            <span className="h-1.5 w-1.5 rounded-full bg-brand-green" />
+            Beta privada · Acceso por invitación
           </span>
 
           <h1 className="mt-6 text-4xl font-extrabold leading-[1.1] tracking-tight text-brand-navy sm:text-5xl">
@@ -31,6 +38,19 @@ export default function Hero() {
             Sanación emocional guiada y un sistema estructurado que te acompaña
             paso a paso.
           </p>
+
+          {/* Narrativa de invitación */}
+          <div className="mx-auto mt-6 flex max-w-xl items-start gap-3 rounded-2xl border border-brand-green/20 bg-white/70 p-4 text-left shadow-sm lg:mx-0">
+            <span className="mt-0.5 flex h-6 w-6 shrink-0 items-center justify-center rounded-full bg-brand-green text-white">
+              <IconCheck className="h-4 w-4" />
+            </span>
+            <p className="text-sm leading-relaxed text-ink">
+              <span className="font-semibold text-brand-navy">
+                Has sido invitado a participar en la beta privada.
+              </span>{" "}
+              Estás entre los primeros en vivir la experiencia CresiMotion.
+            </p>
+          </div>
 
           {/* Indicadores */}
           <ul className="mt-8 flex flex-wrap justify-center gap-x-6 gap-y-3 lg:justify-start">
@@ -53,7 +73,7 @@ export default function Hero() {
               href="#como-comenzar"
               className="group inline-flex items-center justify-center gap-2 rounded-full bg-brand-green px-7 py-3.5 text-base font-semibold text-white shadow-lg shadow-brand-green/25 transition-all hover:bg-brand-green-dark hover:shadow-xl"
             >
-              Comenzar ahora
+              Acceder a la beta privada
               <IconArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />
             </a>
             <a
