@@ -10,7 +10,9 @@ export default function Footer() {
       <div className="mx-auto max-w-6xl px-4 py-12 sm:px-6">
         <div className="flex flex-col gap-8 md:flex-row md:items-start md:justify-between">
           <div className="max-w-sm">
-            <Logo variant="light" />
+            <span className="inline-flex rounded-2xl bg-white px-4 py-3 shadow-sm">
+              <Logo height={56} />
+            </span>
             <p className="mt-4 text-sm leading-relaxed text-slate-400">
               CresiMotion — Transformando emociones, construyendo bienestar.
             </p>

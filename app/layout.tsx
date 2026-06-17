@@ -29,13 +29,6 @@ export const metadata: Metadata = {
   ],
   authors: [{ name: "CresiMotion" }],
   alternates: { canonical: "/" },
-  icons: {
-    icon: [
-      { url: "/favicon.svg", type: "image/svg+xml" },
-      { url: "/icon.svg", type: "image/svg+xml" },
-    ],
-    apple: "/icon.svg",
-  },
   openGraph: {
     type: "website",
     locale: "es_MX",
@@ -45,7 +38,7 @@ export const metadata: Metadata = {
     description,
     images: [
       {
-        url: "/og-image.svg",
+        url: "/og-image.png",
         width: 1200,
         height: 630,
         alt: "CresiMotion — Plataforma de transformación emocional",
@@ -56,7 +49,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title,
     description,
-    images: ["/og-image.svg"],
+    images: ["/og-image.png"],
   },
   robots: { index: true, follow: true },
 };

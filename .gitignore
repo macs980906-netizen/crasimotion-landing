@@ -141,3 +141,7 @@ dist
 vite.config.js.timestamp-*
 vite.config.ts.timestamp-*
 .vite/
+
+# Review artifacts & screenshot tooling (local only)
+/screenshots/
+/shots.mjs

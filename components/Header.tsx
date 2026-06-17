@@ -29,7 +29,7 @@ export default function Header() {
           aria-label="CresiMotion — Inicio"
           className="flex items-center"
         >
-          <Logo />
+          <Logo height={44} priority />
         </Link>
 
         <nav aria-label="Principal">
