@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F8FAFC"/>
+      <stop offset="1" stop-color="#E8F6F1"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1080" cy="120" r="220" fill="#14B88F" opacity="0.10"/>
+  <circle cx="120" cy="560" r="180" fill="#0D2E5C" opacity="0.06"/>
+
+  <g transform="translate(96,150)">
+    <g fill="none" stroke="#14B88F" stroke-width="6" stroke-linejoin="round" stroke-linecap="round">
+      <path d="M48 6c6 11 6 28 0 44-6-16-6-33 0-44Z"/>
+      <path d="M48 50c-8-9-18-14-29-12 3 9 12 17 29 18Z"/>
+      <path d="M48 50c8-9 18-14 29-12-3 9-12 17-29 18Z"/>
+      <path d="M19 38c-6 6-9 14-9 21 9-1 17-8 21-18Z"/>
+      <path d="M77 38c6 6 9 14 9 21-9-1-17-8-21-18Z"/>
+      <path d="M8 62c12 8 24 9 40 9s28-1 40-9"/>
+    </g>
+    <text x="118" y="55" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="800" fill="#0D2E5C">CRESI</text>
+    <text x="288" y="55" font-family="Inter, Arial, sans-serif" font-size="52" font-weight="800" fill="#14B88F">MOTION</text>
+  </g>
+
+  <text x="96" y="330" font-family="Inter, Arial, sans-serif" font-size="64" font-weight="800" fill="#0D2E5C">Gestiona lo que sientes</text>
+  <text x="96" y="408" font-family="Inter, Arial, sans-serif" font-size="64" font-weight="800" fill="#14B88F">antes de que te controle</text>
+  <text x="96" y="478" font-family="Inter, Arial, sans-serif" font-size="32" font-weight="500" fill="#475569">Sanación emocional guiada que te acompaña paso a paso.</text>
+
+  <rect x="96" y="520" width="430" height="62" rx="31" fill="#14B88F"/>
+  <text x="128" y="560" font-family="Inter, Arial, sans-serif" font-size="28" font-weight="700" fill="#FFFFFF">Plataforma de transformación emocional</text>
+</svg>
