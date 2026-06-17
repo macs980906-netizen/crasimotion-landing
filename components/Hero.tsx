@@ -24,14 +24,14 @@ export default function Hero() {
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 pb-16 sm:px-6 lg:grid-cols-2 lg:gap-8 lg:pb-24">
         {/* Columna de texto */}
         <div className="animate-slideUp text-center lg:text-left">
-          <span className="inline-flex items-center gap-2 rounded-full bg-brand-green/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-brand-cta">
-            <span className="h-1.5 w-1.5 rounded-full bg-brand-cta" />
+          <span className="inline-flex items-center gap-2 rounded-full bg-brand-green/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-brand-cta-dark">
+            <span className="h-1.5 w-1.5 rounded-full bg-brand-cta-dark" />
             Beta privada · Acceso por invitación
           </span>
 
           <h1 className="mt-6 text-4xl font-extrabold leading-[1.1] tracking-tight text-brand-navy sm:text-5xl">
             Gestiona lo que sientes{" "}
-            <span className="text-brand-green">antes de que te controle</span>
+            <span className="text-brand-cta">antes de que te controle</span>
           </h1>
 
           <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-slate-600 lg:mx-0">
