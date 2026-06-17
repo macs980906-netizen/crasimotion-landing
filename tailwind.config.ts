@@ -12,6 +12,9 @@ const config: Config = {
           green: "#14B88F",
           "green-dark": "#0F8A6B",
           navy: "#0D2E5C",
+          // Verde accesible (AA ≥4.5:1 con blanco) para botones y enlaces.
+          cta: "#0E8064",
+          "cta-dark": "#0B6E54",
         },
         surface: "#F8FAFC",
         ink: "#1E293B",

@@ -97,7 +97,7 @@ export default function HowToStart() {
             <a
               href={EXPO_APP_URL}
               onClick={() => trackEvent("click_comenzar")}
-              className="group relative mt-7 inline-flex w-full items-center justify-center gap-3 rounded-full bg-brand-green px-10 py-5 text-xl font-bold text-white shadow-xl shadow-brand-green/30 transition-all hover:bg-brand-green-dark hover:shadow-2xl focus-visible:outline-white sm:w-auto"
+              className="group relative mt-7 inline-flex w-full items-center justify-center gap-3 rounded-full bg-brand-cta px-10 py-5 text-xl font-bold text-white shadow-xl shadow-brand-cta/30 transition-all hover:bg-brand-cta-dark hover:shadow-2xl focus-visible:outline-white sm:w-auto"
             >
               Acceder a la Beta Privada
               <IconArrowRight className="h-6 w-6 transition-transform group-hover:translate-x-1" />

@@ -36,7 +36,7 @@ export default function Header() {
           <Link
             href="/aviso-privacidad"
             onClick={() => trackEvent("click_aviso_privacidad", { location: "header" })}
-            className="rounded-full px-4 py-2 text-sm font-semibold text-brand-navy transition-colors hover:text-brand-green"
+            className="rounded-full px-4 py-2 text-sm font-semibold text-brand-navy transition-colors hover:text-brand-cta"
           >
             Aviso de Privacidad
           </Link>

@@ -25,7 +25,7 @@ export default function Benefits() {
     <section id="beneficios" className="scroll-mt-20 py-20 sm:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <Reveal className="mx-auto max-w-2xl text-center">
-          <p className="text-sm font-semibold uppercase tracking-wide text-brand-green-dark">
+          <p className="text-sm font-semibold uppercase tracking-wide text-brand-cta">
             ¿Te suena familiar?
           </p>
           <h2 className="mt-3 text-3xl font-bold tracking-tight text-brand-navy sm:text-4xl">
@@ -47,7 +47,7 @@ export default function Benefits() {
         </ul>
 
         <Reveal delay={120}>
-          <p className="mt-10 text-center text-lg font-semibold text-brand-green-dark">
+          <p className="mt-10 text-center text-lg font-semibold text-brand-cta">
             No necesitas más información. Necesitas claridad.
           </p>
         </Reveal>

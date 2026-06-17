@@ -24,8 +24,8 @@ export default function Hero() {
       <div className="mx-auto grid max-w-6xl items-center gap-12 px-4 pb-16 sm:px-6 lg:grid-cols-2 lg:gap-8 lg:pb-24">
         {/* Columna de texto */}
         <div className="animate-slideUp text-center lg:text-left">
-          <span className="inline-flex items-center gap-2 rounded-full bg-brand-green/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-brand-green-dark">
-            <span className="h-1.5 w-1.5 rounded-full bg-brand-green" />
+          <span className="inline-flex items-center gap-2 rounded-full bg-brand-green/10 px-4 py-1.5 text-xs font-semibold uppercase tracking-wide text-brand-cta">
+            <span className="h-1.5 w-1.5 rounded-full bg-brand-cta" />
             Beta privada · Acceso por invitación
           </span>
 
@@ -71,7 +71,7 @@ export default function Hero() {
           <div className="mt-10 flex flex-col items-center gap-3 sm:flex-row sm:justify-center lg:justify-start">
             <a
               href="#como-comenzar"
-              className="group inline-flex items-center justify-center gap-2 rounded-full bg-brand-green px-7 py-3.5 text-base font-semibold text-white shadow-lg shadow-brand-green/25 transition-all hover:bg-brand-green-dark hover:shadow-xl"
+              className="group inline-flex items-center justify-center gap-2 rounded-full bg-brand-cta px-7 py-3.5 text-base font-semibold text-white shadow-lg shadow-brand-cta/25 transition-all hover:bg-brand-cta-dark hover:shadow-xl"
             >
               Acceder a la beta privada
               <IconArrowRight className="h-5 w-5 transition-transform group-hover:translate-x-1" />

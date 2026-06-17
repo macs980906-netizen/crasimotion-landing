@@ -20,7 +20,7 @@ export default function AvisoPrivacidad() {
         <article className="mx-auto max-w-3xl px-4 pb-20 sm:px-6">
           <Link
             href="/"
-            className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-green transition-colors hover:text-brand-green-dark"
+            className="inline-flex items-center gap-1.5 text-sm font-semibold text-brand-cta transition-colors hover:text-brand-cta-dark"
           >
             <IconArrowRight className="h-4 w-4 rotate-180" />
             Volver al inicio
@@ -81,7 +81,7 @@ export default function AvisoPrivacidad() {
               de tus datos, escríbenos a{" "}
               <a
                 href={`mailto:${CONTACT_EMAIL}`}
-                className="font-semibold text-brand-green hover:underline"
+                className="font-semibold text-brand-cta hover:underline"
               >
                 {CONTACT_EMAIL}
               </a>
