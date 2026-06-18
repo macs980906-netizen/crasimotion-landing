@@ -13,8 +13,9 @@ export const EXPO_GO_ANDROID_URL =
 export const EXPO_GO_IOS_URL =
   "https://apps.apple.com/app/expo-go/id982107779";
 
-// Guía detallada de acceso (instructivo completo). Placeholder configurable.
-export const ACCESS_GUIDE_URL = "#guia-de-acceso";
+// Guía detallada de acceso (instructivo completo).
+export const ACCESS_GUIDE_URL =
+  "https://drive.google.com/file/d/1xrNoRwsGFznqID0KAyHYxaIr_KcDs4s3/view?usp=sharing";
 
 // Datos de contacto.
 export const CONTACT_EMAIL = "hola@cresimotion.com";

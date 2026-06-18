@@ -141,6 +141,8 @@ export default function HowToStart() {
               <a
                 href={ACCESS_GUIDE_URL}
                 onClick={() => trackEvent("click_guia_acceso")}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-2.5 text-sm font-semibold text-slate-100 transition-colors hover:border-white/50 hover:bg-white/5"
               >
                 <IconBook className="h-4 w-4" />
