@@ -24,9 +24,9 @@ const items: FaqItem[] = [
   },
   {
     q: "¿Por qué necesito Expo Go?",
-    a: "Actualmente CresiMotion utiliza Expo Go para facilitar el acceso a nuevas funcionalidades y mejoras continuas.",
+    a: "Expo Go es una solución temporal de distribución solo durante la beta: es la vía para abrir CresiMotion en tu teléfono. No es CresiMotion y, en la versión final, no necesitarás este paso.",
     schema:
-      "Actualmente CresiMotion utiliza Expo Go para facilitar el acceso a nuevas funcionalidades y mejoras continuas.",
+      "Expo Go es una solución temporal de distribución solo durante la beta: es la vía para abrir CresiMotion en tu teléfono. No es CresiMotion y, en la versión final, no necesitarás este paso.",
   },
   {
     q: "¿Tiene costo?",

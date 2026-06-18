@@ -6,12 +6,15 @@ import {
   EXPO_APP_URL,
   EXPO_GO_ANDROID_URL,
   EXPO_GO_IOS_URL,
+  ACCESS_GUIDE_URL,
 } from "@/lib/config";
 import {
   IconAndroid,
   IconApple,
   IconArrowRight,
   IconWarning,
+  IconInfo,
+  IconBook,
 } from "./Icons";
 
 export default function HowToStart() {
@@ -34,13 +37,44 @@ export default function HowToStart() {
           </p>
         </Reveal>
 
-        {/* Requisito previo: Expo Go (de-emphasized) */}
+        {/* Explicación tranquilizadora sobre Expo Go (solución temporal) */}
         <Reveal delay={80}>
-          <div className="mx-auto mt-10 max-w-xl rounded-2xl border border-white/10 bg-white/[0.04] p-5">
+          <div className="mx-auto mt-10 max-w-xl rounded-2xl border border-white/10 bg-white/[0.05] p-6">
+            <div className="flex items-center gap-3">
+              <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full bg-brand-green/15 text-brand-green">
+                <IconInfo className="h-5 w-5" />
+              </span>
+              <h3 className="text-base font-bold">¿Qué es Expo Go?</h3>
+            </div>
+            <p className="mt-4 text-sm leading-relaxed text-slate-300">
+              Durante la beta, CresiMotion se distribuye de forma temporal a
+              través de Expo Go. Es solo la puerta de entrada para abrir la beta
+              en tu teléfono.
+            </p>
+            <ul className="mt-4 space-y-2.5 text-sm text-slate-200">
+              <ClarifyItem>
+                Expo Go <span className="font-semibold">no es CresiMotion</span>
+                : es únicamente la herramienta que permite acceder a la beta.
+              </ClarifyItem>
+              <ClarifyItem>
+                Solo lo usarás para entrar; tu experiencia ocurre dentro de
+                CresiMotion.
+              </ClarifyItem>
+              <ClarifyItem>
+                En la versión final no existirá este paso: abrirás CresiMotion
+                directamente.
+              </ClarifyItem>
+            </ul>
+          </div>
+        </Reveal>
+
+        {/* Paso 1: instalar Expo Go (temporal, de-emphasized) */}
+        <Reveal delay={120}>
+          <div className="mx-auto mt-6 max-w-xl rounded-2xl border border-white/10 bg-white/[0.04] p-5">
             <div className="flex flex-col gap-3 sm:flex-row sm:items-center sm:justify-between">
               <div>
                 <p className="text-[11px] font-semibold uppercase tracking-wider text-slate-400">
-                  Paso 1 · Requisito previo
+                  Paso 1 · Solo durante la beta
                 </p>
                 <p className="mt-1 text-sm font-medium text-slate-200">
                   Instala la app gratuita{" "}
@@ -67,7 +101,7 @@ export default function HowToStart() {
         </Reveal>
 
         {/* Pasos 2 y 3 (resumen breve) */}
-        <Reveal delay={120}>
+        <Reveal delay={160}>
           <div className="mx-auto mt-6 grid max-w-xl gap-3 sm:grid-cols-2">
             <MiniStep
               n={2}
@@ -77,18 +111,18 @@ export default function HowToStart() {
             <MiniStep
               n={3}
               title="Accede a la beta privada"
-              text="Toca el botón y la app se abrirá en Expo Go."
+              text="Toca el botón y CresiMotion se abrirá en Expo Go."
             />
           </div>
         </Reveal>
 
         {/* Bloque CTA principal (protagonista) */}
-        <Reveal delay={160}>
+        <Reveal delay={200}>
           <div className="relative mx-auto mt-10 max-w-xl overflow-hidden rounded-3xl border border-brand-green/40 bg-brand-green/[0.08] p-8 text-center shadow-2xl">
             <div className="pointer-events-none absolute -top-16 left-1/2 h-40 w-40 -translate-x-1/2 rounded-full bg-brand-green/30 blur-3xl" />
 
             <h3 className="relative text-2xl font-bold sm:text-3xl">
-              ¿Listo para empezar?
+              ¿Todo listo para empezar?
             </h3>
             <p className="relative mt-2 text-slate-300">
               Abre CresiMotion en tu teléfono con un solo toque.
@@ -103,7 +137,18 @@ export default function HowToStart() {
               <IconArrowRight className="h-6 w-6 transition-transform group-hover:translate-x-1" />
             </a>
 
-            <p className="relative mt-4 text-xs font-medium uppercase tracking-wide text-slate-400">
+            <div className="relative mt-4">
+              <a
+                href={ACCESS_GUIDE_URL}
+                onClick={() => trackEvent("click_guia_acceso")}
+                className="inline-flex items-center gap-2 rounded-full border border-white/20 px-5 py-2.5 text-sm font-semibold text-slate-100 transition-colors hover:border-white/50 hover:bg-white/5"
+              >
+                <IconBook className="h-4 w-4" />
+                Ver guía detallada de acceso
+              </a>
+            </div>
+
+            <p className="relative mt-5 text-xs font-medium uppercase tracking-wide text-slate-400">
               Acceso por invitación · Participación limitada
             </p>
 
@@ -114,14 +159,22 @@ export default function HowToStart() {
             >
               <IconWarning className="h-5 w-5 shrink-0 text-amber-300" />
               <p className="text-sm font-medium text-amber-50">
-                Necesitas Expo Go instalado para acceder correctamente a la
-                aplicación.
+                Necesitas Expo Go instalado para acceder correctamente a la beta.
               </p>
             </div>
           </div>
         </Reveal>
       </div>
     </section>
+  );
+}
+
+function ClarifyItem({ children }: { children: React.ReactNode }) {
+  return (
+    <li className="flex items-start gap-2.5">
+      <span className="mt-1.5 h-1.5 w-1.5 shrink-0 rounded-full bg-brand-green" />
+      <span className="leading-relaxed">{children}</span>
+    </li>
   );
 }
 

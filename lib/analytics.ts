@@ -7,6 +7,7 @@ export type AnalyticsEvent =
   | "click_expo_android"
   | "click_expo_ios"
   | "click_comenzar"
+  | "click_guia_acceso"
   | "click_aviso_privacidad";
 
 declare global {

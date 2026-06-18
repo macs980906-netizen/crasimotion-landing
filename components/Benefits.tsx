@@ -12,7 +12,7 @@ const cards = [
   },
   {
     icon: IconBattery,
-    text: "Te sientes saturado emocionalmente y mentalmente.",
+    text: "Sientes saturación emocional y mental.",
   },
   {
     icon: IconLoop,

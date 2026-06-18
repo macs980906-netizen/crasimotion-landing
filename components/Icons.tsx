@@ -122,6 +122,40 @@ export function IconCheck(props: SVGProps<SVGSVGElement>) {
   );
 }
 
+export function IconInfo(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...base} {...props}>
+      <circle cx="12" cy="12" r="9" />
+      <path d="M12 11v5M12 8h.01" />
+    </svg>
+  );
+}
+
+export function IconBook(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M4 5a2 2 0 0 1 2-2h11a1 1 0 0 1 1 1v13a1 1 0 0 1-1 1H6a2 2 0 0 0-2 2Z" />
+      <path d="M4 19a2 2 0 0 1 2-2h12" />
+    </svg>
+  );
+}
+
+export function IconGift(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M20 12v8H4v-8M2 8h20v4H2zM12 8V4M12 8c-2 0-4-1-4-2.5S10 4 12 8c2-4 4-3.5 4-2.5S14 8 12 8Z" />
+    </svg>
+  );
+}
+
+export function IconBolt(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...base} {...props}>
+      <path d="M13 2 4 14h7l-1 8 9-12h-7l1-8Z" />
+    </svg>
+  );
+}
+
 export function IconWarning(props: SVGProps<SVGSVGElement>) {
   return (
     <svg {...base} {...props}>

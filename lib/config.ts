@@ -13,6 +13,9 @@ export const EXPO_GO_ANDROID_URL =
 export const EXPO_GO_IOS_URL =
   "https://apps.apple.com/app/expo-go/id982107779";
 
+// Guía detallada de acceso (instructivo completo). Placeholder configurable.
+export const ACCESS_GUIDE_URL = "#guia-de-acceso";
+
 // Datos de contacto.
 export const CONTACT_EMAIL = "hola@cresimotion.com";
 
@@ -21,4 +24,4 @@ export const GA_MEASUREMENT_ID = process.env.NEXT_PUBLIC_GA_ID ?? "";
 
 // Respuesta editable para la pregunta de cuenta en el FAQ.
 export const FAQ_ACCOUNT_ANSWER =
-  "El acceso es por invitación con tu correo previamente autorizado, así que no necesitas registrarte. Dentro de la aplicación podrás guardar tu progreso de forma sencilla.";
+  "El acceso es por invitación con tu correo previamente autorizado, así que no necesitas registrarte. Dentro de CresiMotion podrás guardar tu progreso de forma sencilla.";

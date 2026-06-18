@@ -2,6 +2,7 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import Benefits from "@/components/Benefits";
 import HowToStart from "@/components/HowToStart";
+import BetaBenefits from "@/components/BetaBenefits";
 import Faq from "@/components/Faq";
 import Footer from "@/components/Footer";
 
@@ -18,6 +19,7 @@ export default function Home() {
       <main id="contenido">
         <Hero />
         <Benefits />
+        <BetaBenefits />
         <HowToStart />
         <Faq />
       </main>

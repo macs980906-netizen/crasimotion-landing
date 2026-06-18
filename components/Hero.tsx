@@ -1,17 +1,17 @@
 import Reveal from "./Reveal";
 import PhoneMockup from "./PhoneMockup";
 import {
-  IconPulse,
-  IconRoute,
-  IconCommunity,
+  IconClipboard,
+  IconHeadset,
+  IconGrowth,
   IconArrowRight,
   IconCheck,
 } from "./Icons";
 
 const indicators = [
-  { icon: IconPulse, label: "Diagnóstico emocional" },
-  { icon: IconRoute, label: "Proceso personalizado" },
-  { icon: IconCommunity, label: "Acompañamiento y comunidad" },
+  { icon: IconClipboard, label: "Autoevaluaciones" },
+  { icon: IconHeadset, label: "Sesión terapéutica" },
+  { icon: IconGrowth, label: "Creación de hábitos saludables" },
 ];
 
 export default function Hero() {
@@ -35,8 +35,8 @@ export default function Hero() {
           </h1>
 
           <p className="mx-auto mt-5 max-w-xl text-lg leading-relaxed text-slate-600 lg:mx-0">
-            Sanación emocional guiada y un sistema estructurado que te acompaña
-            paso a paso.
+            Un sistema estructurado de bienestar emocional que te acompaña paso
+            a paso.
           </p>
 
           {/* Narrativa de invitación */}
@@ -46,9 +46,9 @@ export default function Hero() {
             </span>
             <p className="text-sm leading-relaxed text-ink">
               <span className="font-semibold text-brand-navy">
-                Has sido invitado a participar en la beta privada.
+                Has recibido una invitación a la beta privada.
               </span>{" "}
-              Estás entre los primeros en vivir la experiencia CresiMotion.
+              Eres de las primeras personas en vivir la experiencia CresiMotion.
             </p>
           </div>
 

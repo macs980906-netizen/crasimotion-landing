@@ -13,7 +13,7 @@ const inter = Inter({
 const siteUrl = "https://cresimotion.com";
 const title = "CresiMotion | Gestiona lo que sientes antes de que te controle";
 const description =
-  "Sanación emocional guiada y un sistema estructurado que te acompaña paso a paso.";
+  "Un sistema estructurado de bienestar emocional que te acompaña paso a paso.";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
