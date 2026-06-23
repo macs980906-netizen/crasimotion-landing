@@ -34,7 +34,7 @@ export default function WhyPersianLime() {
       <div className="relative mx-auto max-w-6xl px-5 sm:px-8">
         <div className="max-w-2xl">
           <Reveal>
-            <SectionLabel>El cultivo</SectionLabel>
+            <SectionLabel>El activo productivo</SectionLabel>
           </Reveal>
           <Reveal delay={0.05}>
             <h2 className="mt-6 font-display text-3xl font-medium leading-tight tracking-tight text-cream-50 text-balance sm:text-4xl lg:text-[2.75rem]">
@@ -43,8 +43,9 @@ export default function WhyPersianLime() {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-5 text-base leading-relaxed text-cream-100/70">
-              Un activo agrícola con fundamentos sólidos y orientación
-              internacional.
+              Más que un cultivo, un activo productivo real con fundamentos
+              sólidos que aporta estabilidad y orientación internacional dentro
+              de una estrategia patrimonial de largo plazo.
             </p>
           </Reveal>
         </div>

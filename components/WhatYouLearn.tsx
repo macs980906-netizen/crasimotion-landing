@@ -5,7 +5,7 @@ const items = [
   "Cómo funciona el modelo de inversión agrícola.",
   "Por qué algunos inversionistas están incorporando activos agrícolas a su estrategia patrimonial.",
   "Cómo opera la estructura fiduciaria.",
-  "Por qué el limón persa es un cultivo relevante para exportación.",
+  "Por qué el limón persa es un activo productivo relevante para exportación.",
   "Cómo evaluar si esta alternativa es adecuada para tu perfil.",
 ];
 

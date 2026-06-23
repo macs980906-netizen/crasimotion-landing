@@ -69,15 +69,13 @@ export default function Hero() {
           </div>
 
           <h1 className="mt-7 font-display text-4xl font-medium leading-[1.08] tracking-tight text-cream-50 text-balance sm:text-5xl lg:text-6xl">
-            Cómo diversificar tu patrimonio mediante{" "}
-            <span className="text-citrus-400">activos agrícolas</span>{" "}
-            respaldados por producción real
+            No todas las inversiones están diseñadas para quienes{" "}
+            <span className="text-citrus-400">quieren correr</span>.
           </h1>
 
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-cream-100/80 sm:text-lg">
-            Conoce el modelo utilizado por inversionistas que buscan
-            alternativas fuera de los instrumentos tradicionales mediante una
-            estructura respaldada por tierra, producción y fideicomisos.
+            Descubre por qué algunos inversionistas están mirando hacia activos
+            productivos del sector agrícola mexicano.
           </p>
 
           {/* Datos */}
