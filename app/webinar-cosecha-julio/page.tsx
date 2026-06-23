@@ -1,9 +1,7 @@
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import AuthorityStrip from "@/components/AuthorityStrip";
 import WhatYouLearn from "@/components/WhatYouLearn";
-import WhyPersianLime from "@/components/WhyPersianLime";
 import SecurityBacking from "@/components/SecurityBacking";
 import Speaker from "@/components/Speaker";
 import VideoPodcast from "@/components/VideoPodcast";
@@ -34,14 +32,12 @@ export default function WebinarCosechaJulioPage() {
       <Header />
       <main className="flex-1">
         <Hero />
-        <AuthorityStrip />
+        <IsItForYou />
         <WhatYouLearn />
-        <WhyPersianLime />
-        <SecurityBacking />
         <Speaker />
         <VideoPodcast />
+        <SecurityBacking />
         <HostTeam />
-        <IsItForYou />
         <RegistrationForm />
       </main>
       <Footer />

@@ -19,9 +19,9 @@ automáticamente a esta ruta).
 
 Componentes en `components/` (uno por sección):
 
-`Header` · `Hero` · `AuthorityStrip` · `WhatYouLearn` · `WhyPersianLime` ·
-`SecurityBacking` · `Speaker` · `VideoPodcast` · `HostTeam` · `IsItForYou` ·
-`RegistrationForm` · `Footer` · `StickyMobileCTA`
+`Header` · `Hero` · `IsItForYou` · `WhatYouLearn` · `Speaker` ·
+`VideoPodcast` · `SecurityBacking` · `HostTeam` · `RegistrationForm` ·
+`Footer` · `StickyMobileCTA`
 
 ## Formulario (GoHighLevel)
 
