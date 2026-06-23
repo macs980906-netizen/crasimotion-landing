@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: var(--font-inter);
+  --font-display: var(--font-fraunces);
+
+  /* Deep institutional greens */
+  --color-forest-950: #06120c;
+  --color-forest-900: #0a1d15;
+  --color-forest-800: #0f2c20;
+  --color-forest-700: #16412f;
+  --color-forest-600: #1e5a40;
+  --color-forest-500: #267a55;
+
+  /* Citrus accents */
+  --color-citrus-600: #6fa524;
+  --color-citrus-500: #8dc63f;
+  --color-citrus-400: #a8d35f;
+
+  /* Soft gold */
+  --color-gold-500: #c2a14e;
+  --color-gold-400: #d4bd7a;
+  --color-gold-300: #e6d6a8;
+
+  /* Light / cream */
+  --color-cream-50: #f8f6ef;
+  --color-cream-100: #efe9da;
+  --color-ink-900: #0c1410;
+}
+
+:root {
+  color-scheme: dark;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}
+
+body {
+  background-color: var(--color-forest-950);
+  color: var(--color-cream-50);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+/* Anchor offset for the sticky header */
+[id] {
+  scroll-margin-top: 96px;
+}
+
+.text-balance {
+  text-wrap: balance;
+}
+
+.gold-rule {
+  background: linear-gradient(
+    90deg,
+    transparent,
+    var(--color-gold-400),
+    transparent
+  );
+}
+
+::selection {
+  background: var(--color-citrus-500);
+  color: var(--color-forest-950);
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(16px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
