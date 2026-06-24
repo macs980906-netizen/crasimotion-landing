@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Fraunces } from "next/font/google";
 import "./globals.css";
+import MetaPixel from "@/components/MetaPixel";
 
 const inter = Inter({
   variable: "--font-inter",
@@ -34,7 +35,10 @@ export default function RootLayout({
       lang="es"
       className={`${inter.variable} ${fraunces.variable} h-full antialiased`}
     >
-      <body className="min-h-full flex flex-col bg-forest-950">{children}</body>
+      <body className="min-h-full flex flex-col bg-forest-950">
+        <MetaPixel />
+        {children}
+      </body>
     </html>
   );
 }
