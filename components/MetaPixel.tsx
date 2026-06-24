@@ -1,78 +1,19 @@
 "use client";
 
 import Script from "next/script";
-import { useEffect, useRef } from "react";
 
 /** Meta (Facebook) Pixel ID — Cosecha Capital */
 export const META_PIXEL_ID = "1239984030914416";
 
 /**
- * Standard event fired on a successful GoHighLevel form submission.
- * Change to "CompleteRegistration" if you prefer that standard event.
+ * Base Meta Pixel (PageView).
+ *
+ * The conversion event (Lead / CompleteRegistration) is fired server-side by
+ * the native GoHighLevel pixel / Conversions API integration using this same
+ * Pixel ID, so it is intentionally NOT tracked from the landing to avoid
+ * duplicate events.
  */
-const CONVERSION_EVENT = "Lead";
-
-/** Domains GoHighLevel uses to host / postMessage from the embedded form. */
-const GHL_ORIGIN = /(\.cosechacapital\.com)|(\.leadconnectorhq\.com)|(\.msgsndr\.com)$/;
-
-declare global {
-  interface Window {
-    fbq?: (...args: unknown[]) => void;
-    _fbq?: unknown;
-  }
-}
-
 export default function MetaPixel() {
-  const fired = useRef(false);
-
-  useEffect(() => {
-    function onMessage(event: MessageEvent) {
-      // Only trust messages coming from the GoHighLevel form domains.
-      let host = "";
-      try {
-        host = new URL(event.origin).hostname;
-      } catch {
-        return;
-      }
-      if (!GHL_ORIGIN.test(host)) return;
-
-      // GoHighLevel posts messages in several shapes:
-      //   - array:  ["action-name", ...payload]
-      //   - object: { action | type | event: "..." }
-      //   - string: "action-name"
-      // We normalise to a single string and look for a submit signal.
-      const data = event.data as unknown;
-      let signal = "";
-      try {
-        if (Array.isArray(data)) {
-          signal = typeof data[0] === "string" ? data[0] : JSON.stringify(data);
-        } else if (data && typeof data === "object") {
-          const o = data as Record<string, unknown>;
-          signal = String(o.action ?? o.type ?? o.event ?? JSON.stringify(o));
-        } else if (typeof data === "string") {
-          signal = data;
-        }
-      } catch {
-        return;
-      }
-
-      const isSubmit = /submit|submitted|form[_-]?submit|formSubmitted/i.test(
-        signal
-      );
-      if (!isSubmit || fired.current) return;
-
-      fired.current = true;
-      if (typeof window.fbq === "function") {
-        window.fbq("track", CONVERSION_EVENT, {
-          content_name: "WEBINAR_COSECHA_JULIO_2026",
-        });
-      }
-    }
-
-    window.addEventListener("message", onMessage);
-    return () => window.removeEventListener("message", onMessage);
-  }, []);
-
   return (
     <>
       <Script id="meta-pixel" strategy="afterInteractive">
