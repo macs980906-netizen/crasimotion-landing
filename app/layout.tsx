@@ -19,9 +19,10 @@ const fraunces = Fraunces({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://www.cosechacapital.com"),
-  title: "Webinar Privado · Cosecha Capital",
+  title:
+    "Clase en vivo: Inversión en activos productivos agrícolas | Cosecha Capital",
   description:
-    "Conoce el modelo utilizado por inversionistas que diversifican su patrimonio mediante activos agrícolas respaldados por producción real, estructura fiduciaria y orientación a exportación.",
+    "Conoce cómo funciona un modelo de inversión respaldado por activos productivos del campo mexicano, sus riesgos, estructura y criterios de evaluación. Clase en vivo gratuita el 30 de julio.",
   robots: { index: true, follow: true },
 };
 

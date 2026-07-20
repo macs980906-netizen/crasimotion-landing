@@ -3,20 +3,18 @@ import CTAButton from "./ui/CTAButton";
 import SectionLabel from "./ui/SectionLabel";
 
 const datos = [
-  { label: "Miércoles 01 de julio", icon: "calendar" },
-  { label: "Modalidad online", icon: "globe" },
+  { label: "Jueves 30 de julio", icon: "calendar" },
+  { label: "Online y en vivo", icon: "globe" },
+  { label: "Acceso gratuito", icon: "ticket" },
   { label: "Cupo limitado", icon: "users" },
 ] as const;
 
 const bullets = [
-  "Activos productivos",
-  "Estructura fiduciaria",
-  "Producción orientada a exportación",
-  "Patrimonio respaldado por economía real",
+  "Activos productivos reales",
+  "Producción agrícola orientada a exportación",
+  "Estructura fiduciaria y mecanismos de respaldo",
+  "Criterios para evaluar riesgo, plazo y liquidez",
 ];
-
-const MODEL_DOC =
-  "https://drive.google.com/file/d/1S9toBG5odgA4ICTA6nRTUiy-m3BHGg-C/view?usp=drive_link";
 
 function Icon({ name }: { name: string }) {
   const common = "h-4 w-4 shrink-0 text-citrus-400";
@@ -32,6 +30,13 @@ function Icon({ name }: { name: string }) {
       <svg className={common} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
         <circle cx="12" cy="12" r="9" />
         <path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18" />
+      </svg>
+    );
+  if (name === "ticket")
+    return (
+      <svg className={common} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+        <path d="M3 9.5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2 2 2 0 0 0 0 5 2 2 0 0 1-2 2H5a2 2 0 0 1-2-2 2 2 0 0 0 0-5Z" />
+        <path d="M14.5 7.5v9" strokeDasharray="1.5 2.5" />
       </svg>
     );
   return (
@@ -65,17 +70,18 @@ export default function Hero() {
       <div className="mx-auto w-full max-w-6xl px-5 pb-20 pt-32 sm:px-8 sm:pt-36 lg:pt-40">
         <div className="max-w-3xl">
           <div className="animate-[fadeUp_0.8s_ease-out_both]">
-            <SectionLabel>Webinar privado</SectionLabel>
+            <SectionLabel>Clase en vivo gratuita</SectionLabel>
           </div>
 
           <h1 className="mt-7 font-display text-4xl font-medium leading-[1.08] tracking-tight text-cream-50 text-balance sm:text-5xl lg:text-6xl">
-            No todas las inversiones están diseñadas para quienes{" "}
-            <span className="text-citrus-400">quieren correr</span>.
+            Hay inversiones que no viven en una pantalla.{" "}
+            <span className="text-citrus-400">Crecen en el campo mexicano.</span>
           </h1>
 
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-cream-100/80 sm:text-lg">
-            Descubre por qué algunos inversionistas están mirando hacia activos
-            productivos del sector agrícola mexicano.
+            Conoce cómo funciona un modelo de inversión respaldado por activos
+            productivos agrícolas, qué riesgos debes evaluar y cómo saber si
+            puede integrarse a tu estrategia patrimonial.
           </p>
 
           {/* Datos */}
@@ -109,15 +115,14 @@ export default function Hero() {
             <CTAButton href="#registro" size="lg">
               Reservar mi lugar
             </CTAButton>
-            <CTAButton
-              href={MODEL_DOC}
-              variant="outline"
-              size="lg"
-              external
-            >
-              Conocer el modelo
+            <CTAButton href="#que-aprenderas" variant="outline" size="lg">
+              Conocer la clase
             </CTAButton>
           </div>
+
+          <p className="mt-5 text-sm text-cream-100/55">
+            Registrarte no implica ningún compromiso de inversión.
+          </p>
         </div>
       </div>
     </section>

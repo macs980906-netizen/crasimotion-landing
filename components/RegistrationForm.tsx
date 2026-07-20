@@ -19,27 +19,32 @@ export default function RegistrationForm() {
       <div className="relative mx-auto max-w-6xl px-5 sm:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <Reveal className="flex justify-center">
-            <SectionLabel>Registro</SectionLabel>
+            <SectionLabel>Registro gratuito</SectionLabel>
           </Reveal>
           <Reveal delay={0.05}>
             <h2 className="mt-6 font-display text-3xl font-medium leading-tight tracking-tight text-cream-50 sm:text-4xl">
-              Reserva tu lugar en el webinar
+              Reserva tu lugar en la clase en vivo
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-4 text-base leading-relaxed text-cream-100/70">
-              Completa tus datos y recibe la confirmación de tu registro.
+              Completa tus datos y recibe la confirmación, el acceso y los
+              recordatorios de la sesión.
             </p>
           </Reveal>
           <Reveal delay={0.12}>
             <div className="mt-6 inline-flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm text-cream-100/70">
               <span className="inline-flex items-center gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-gold-400" />
-                Miércoles 01 de julio
+                Jueves 30 de julio
               </span>
               <span className="inline-flex items-center gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-gold-400" />
-                Modalidad online
+                Online y en vivo
+              </span>
+              <span className="inline-flex items-center gap-2">
+                <span className="h-1.5 w-1.5 rounded-full bg-gold-400" />
+                Acceso gratuito
               </span>
               <span className="inline-flex items-center gap-2">
                 <span className="h-1.5 w-1.5 rounded-full bg-gold-400" />
@@ -77,6 +82,27 @@ export default function RegistrationForm() {
                   className="block min-h-[560px] w-full"
                 />
               </div>
+            </div>
+
+            <div className="mx-auto mt-6 max-w-[540px] space-y-3 text-center">
+              <p className="text-[13px] leading-relaxed text-cream-100/55">
+                Al registrarte recibirás información relacionada únicamente con
+                esta clase y su seguimiento. Revisa tu bandeja de spam en caso
+                de que no te llegue la información.
+              </p>
+              <p className="text-[13px] leading-relaxed text-cream-100/55">
+                Registrarte no representa un compromiso de inversión.
+              </p>
+              <p className="text-[13px] leading-relaxed text-cream-100/55">
+                <a
+                  href="https://www.cosechacapital.com/aviso-de-privacidad/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="underline decoration-cream-100/30 underline-offset-4 transition-colors hover:text-citrus-400"
+                >
+                  Aviso de privacidad
+                </a>
+              </p>
             </div>
           </div>
         </Reveal>

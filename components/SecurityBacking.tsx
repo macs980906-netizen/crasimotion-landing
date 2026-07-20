@@ -5,27 +5,27 @@ const pillars = [
   {
     group: "Estructura fiduciaria",
     title: "Fideicomiso de Tierra",
-    desc: "La tierra se mantiene dentro de una estructura fiduciaria, aportando respaldo patrimonial al proyecto.",
+    desc: "La tierra se integra a una estructura fiduciaria que forma parte del respaldo patrimonial del proyecto.",
   },
   {
     group: "Estructura fiduciaria",
     title: "Fideicomiso de Operación",
-    desc: "La operación agrícola se administra bajo un esquema fiduciario con reglas claras de funcionamiento.",
+    desc: "La operación agrícola se administra bajo reglas y procesos establecidos para su funcionamiento.",
   },
   {
     group: "Estructura fiduciaria",
     title: "Fideicomiso de Dispersión",
-    desc: "La distribución de recursos se realiza mediante un mecanismo fiduciario ordenado y transparente.",
+    desc: "La distribución de recursos se realiza mediante un mecanismo fiduciario diseñado para ordenar y transparentar el proceso.",
   },
   {
     group: "Cobertura",
     title: "Seguro de Plantación",
-    desc: "La plantación cuenta con cobertura ante eventos que puedan afectar el cultivo.",
+    desc: "La plantación contempla coberturas frente a determinados eventos que pueden afectar el cultivo, conforme a los términos aplicables.",
   },
   {
     group: "Cobertura",
-    title: "Seguro de Rendimiento",
-    desc: "Cobertura orientada a respaldar los niveles de producción esperados.",
+    title: "Cobertura de Producción",
+    desc: "El modelo contempla mecanismos de cobertura relacionados con determinados niveles de producción, sujetos a condiciones y alcances específicos.",
   },
 ];
 
@@ -52,17 +52,17 @@ export default function SecurityBacking() {
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <div className="max-w-2xl">
           <Reveal>
-            <SectionLabel tone="light">Seguridad y respaldo</SectionLabel>
+            <SectionLabel tone="light">Estructura del modelo</SectionLabel>
           </Reveal>
           <Reveal delay={0.05}>
             <h2 className="mt-6 font-display text-3xl font-medium leading-tight tracking-tight text-balance sm:text-4xl lg:text-[2.75rem]">
-              Una estructura diseñada para brindar transparencia y certeza
+              Conoce qué función cumple cada mecanismo de respaldo
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-5 text-base leading-relaxed text-forest-800/70">
-              Cada componente cumple una función específica dentro de un modelo
-              pensado para ordenar, respaldar y dar claridad a cada etapa.
+              Durante la clase explicaremos cómo se organiza cada componente y
+              cuáles son sus alcances dentro del modelo.
             </p>
           </Reveal>
         </div>

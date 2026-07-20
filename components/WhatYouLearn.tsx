@@ -2,23 +2,27 @@ import Reveal from "./ui/Reveal";
 import SectionLabel from "./ui/SectionLabel";
 
 const items = [
-  "Cómo funciona el modelo de inversión agrícola.",
-  "Por qué algunos inversionistas están incorporando activos agrícolas a su estrategia patrimonial.",
-  "Cómo opera la estructura fiduciaria.",
-  "Por qué el limón persa es un activo productivo relevante para exportación.",
-  "Cómo evaluar si esta alternativa es adecuada para tu perfil.",
+  "Qué convierte a un activo agrícola en un activo productivo.",
+  "Cómo se conectan la tierra, la operación, la producción y la comercialización.",
+  "Cómo funciona la estructura fiduciaria y qué papel cumple dentro del modelo.",
+  "Qué riesgos, plazos y condiciones deberías analizar antes de participar.",
+  "Cómo evaluar si esta alternativa encaja con tu perfil y tus objetivos patrimoniales.",
+  "Qué preguntas debes hacer antes de invertir en cualquier modelo respaldado por activos reales.",
 ];
 
 export default function WhatYouLearn() {
   return (
-    <section className="relative bg-cream-50 py-20 text-forest-900 sm:py-28">
+    <section
+      id="que-aprenderas"
+      className="relative bg-cream-50 py-20 text-forest-900 sm:py-28"
+    >
       <div className="mx-auto max-w-6xl px-5 sm:px-8">
         <Reveal>
-          <SectionLabel tone="light">Contenido del webinar</SectionLabel>
+          <SectionLabel tone="light">Contenido de la clase</SectionLabel>
         </Reveal>
         <Reveal delay={0.05}>
           <h2 className="mt-6 max-w-2xl font-display text-3xl font-medium leading-tight tracking-tight text-balance sm:text-4xl lg:text-[2.75rem]">
-            Qué aprenderás
+            Lo que entenderás antes de tomar una decisión
           </h2>
         </Reveal>
 
@@ -27,7 +31,7 @@ export default function WhatYouLearn() {
             <Reveal
               key={item}
               delay={(i % 2) * 0.08}
-              className={`bg-cream-50 ${i === items.length - 1 ? "md:col-span-2" : ""}`}
+              className="bg-cream-50"
             >
               <div className="flex h-full items-start gap-5 p-7 sm:p-8">
                 <span className="font-display text-2xl font-semibold text-citrus-600">
