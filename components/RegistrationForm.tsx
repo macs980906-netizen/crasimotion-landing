@@ -1,10 +1,45 @@
 "use client";
 
+import { useEffect } from "react";
 import Script from "next/script";
 import Reveal from "./ui/Reveal";
 import SectionLabel from "./ui/SectionLabel";
 
 export default function RegistrationForm() {
+  // Redirige a /gracias cuando el formulario embebido de GHL se envía con
+  // éxito. GHL publica un postMessage de envío desde el iframe del formulario;
+  // escuchamos solo mensajes de su dominio y evitamos los de ajuste de altura.
+  //
+  // Requisito en GHL: el formulario debe tener "On Submit" en "Show a message"
+  // (sin redirect propio), de lo contrario la redirección de GHL tiene
+  // prioridad sobre esta.
+  useEffect(() => {
+    let redirected = false;
+
+    const onMessage = (e: MessageEvent) => {
+      if (!e.origin.endsWith("cosechacapital.com")) return;
+
+      let serialized = "";
+      try {
+        serialized =
+          typeof e.data === "string" ? e.data : JSON.stringify(e.data ?? "");
+      } catch {
+        return;
+      }
+
+      const isSubmit = /submit/i.test(serialized);
+      const isResize = /height/i.test(serialized);
+
+      if (isSubmit && !isResize && !redirected) {
+        redirected = true;
+        window.location.assign("/gracias");
+      }
+    };
+
+    window.addEventListener("message", onMessage);
+    return () => window.removeEventListener("message", onMessage);
+  }, []);
+
   return (
     <section
       id="registro"
