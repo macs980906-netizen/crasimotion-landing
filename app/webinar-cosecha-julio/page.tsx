@@ -5,6 +5,7 @@ import AlternativeIntro from "@/components/AlternativeIntro";
 import WhatYouLearn from "@/components/WhatYouLearn";
 import SecurityBacking from "@/components/SecurityBacking";
 import Speakers from "@/components/Speakers";
+import VideoPodcast from "@/components/VideoPodcast";
 import RiskInfo from "@/components/RiskInfo";
 import IsItForYou from "@/components/IsItForYou";
 import RegistrationForm from "@/components/RegistrationForm";
@@ -37,6 +38,7 @@ export default function WebinarCosechaJulioPage() {
         <IsItForYou />
         <WhatYouLearn />
         <Speakers />
+        <VideoPodcast />
         <SecurityBacking />
         <RiskInfo />
         <RegistrationForm />
