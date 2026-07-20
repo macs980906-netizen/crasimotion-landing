@@ -1,5 +1,6 @@
 import Reveal from "./ui/Reveal";
 import SectionLabel from "./ui/SectionLabel";
+import CTAButton from "./ui/CTAButton";
 import YouTubeLite from "./YouTubeLite";
 
 export default function VideoPodcast() {
@@ -29,6 +30,12 @@ export default function VideoPodcast() {
             id="gtanYjEXQTs"
             title="Marcus Dantus y Rodrigo Castilla · Inversión agrícola"
           />
+        </Reveal>
+
+        <Reveal delay={0.15} className="mt-12 flex justify-center">
+          <CTAButton href="#registro" size="lg">
+            Reservar mi lugar
+          </CTAButton>
         </Reveal>
       </div>
     </section>

@@ -1,5 +1,6 @@
 import Reveal from "./ui/Reveal";
 import SectionLabel from "./ui/SectionLabel";
+import CTAButton from "./ui/CTAButton";
 
 const pillars = [
   {
@@ -93,6 +94,12 @@ export default function SecurityBacking() {
             </Reveal>
           ))}
         </div>
+
+        <Reveal delay={0.1} className="mt-12 flex justify-center">
+          <CTAButton href="#registro" size="lg">
+            Reservar mi lugar
+          </CTAButton>
+        </Reveal>
       </div>
     </section>
   );

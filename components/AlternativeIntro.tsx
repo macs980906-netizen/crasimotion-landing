@@ -1,5 +1,6 @@
 import Reveal from "./ui/Reveal";
 import SectionLabel from "./ui/SectionLabel";
+import CTAButton from "./ui/CTAButton";
 
 export default function AlternativeIntro() {
   return (
@@ -38,6 +39,12 @@ export default function AlternativeIntro() {
               <span className="text-citrus-400">entenderla</span>.”
             </blockquote>
           </figure>
+        </Reveal>
+
+        <Reveal delay={0.15} className="mt-12 flex justify-center">
+          <CTAButton href="#registro" size="lg">
+            Reservar mi lugar
+          </CTAButton>
         </Reveal>
       </div>
     </section>

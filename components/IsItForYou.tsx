@@ -1,5 +1,6 @@
 import Reveal from "./ui/Reveal";
 import SectionLabel from "./ui/SectionLabel";
+import CTAButton from "./ui/CTAButton";
 
 const yes = [
   "Quieres diversificar tu patrimonio con alternativas fuera de los instrumentos tradicionales.",
@@ -89,6 +90,12 @@ export default function IsItForYou() {
             </div>
           </Reveal>
         </div>
+
+        <Reveal delay={0.12} className="mt-12 flex justify-center">
+          <CTAButton href="#registro" size="lg">
+            Reservar mi lugar
+          </CTAButton>
+        </Reveal>
       </div>
     </section>
   );
