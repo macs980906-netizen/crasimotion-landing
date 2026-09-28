@@ -5,7 +5,7 @@ import SectionLabel from "./ui/SectionLabel";
 const people = [
   { name: "Yermi Sutton", role: "CEO · Cosecha Capital" },
   { name: "Rodrigo Castilla", role: "Vicepresidente · Citrus Patrimonial" },
-  { name: "Marcus Dantus", role: "Emprendedor · Respalda el modelo" },
+  { name: "Marcus Dantus", role: "" },
 ];
 
 export default function Team() {
@@ -50,14 +50,13 @@ export default function Team() {
                     <p className="font-display text-sm font-extrabold uppercase tracking-tight text-cream-50">
                       {p.name}
                     </p>
-                    <p className="mt-1 text-xs leading-snug text-citrus-400">
-                      {p.role}
-                    </p>
+                    {p.role && (
+                      <p className="mt-1 text-xs leading-snug text-citrus-400">
+                        {p.role}
+                      </p>
+                    )}
                   </div>
                 ))}
-                <p className="mt-1 text-[11px] leading-snug text-cream-100/40 sm:col-span-3">
-                  De izquierda a derecha en la fotografía.
-                </p>
               </figcaption>
             </figure>
           </Reveal>
@@ -72,7 +71,7 @@ export default function Team() {
                 Marcus Dantus
               </h3>
               <p className="mt-3 text-sm font-semibold uppercase tracking-[0.16em] text-citrus-400">
-                Emprendedor y figura del ecosistema de negocios en México
+                Figura del ecosistema de negocios en México
               </p>
               <div className="mt-5 h-px w-16 gold-rule" />
               <p className="mt-5 text-base leading-relaxed text-cream-100/80">

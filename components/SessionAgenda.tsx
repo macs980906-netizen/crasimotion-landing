@@ -27,8 +27,8 @@ export default function SessionAgenda() {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-5 text-base leading-relaxed text-forest-800/70">
-              Una sesión en vivo por Zoom, directa y sin rodeos, con espacio para
-              resolver tus dudas con un asesor.
+              Una sesión en vivo con Marcus Dantus, por Zoom, directa y con
+              espacio para resolver tus dudas.
             </p>
           </Reveal>
         </div>

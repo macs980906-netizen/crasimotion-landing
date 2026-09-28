@@ -3,7 +3,6 @@ import Header from "@/components/Header";
 import Hero from "@/components/Hero";
 import ModelThesis from "@/components/ModelThesis";
 import SessionAgenda from "@/components/SessionAgenda";
-import SecurityBacking from "@/components/SecurityBacking";
 import Team from "@/components/Team";
 import VideoPodcast from "@/components/VideoPodcast";
 import RegistrationForm from "@/components/RegistrationForm";
@@ -35,7 +34,6 @@ export default function WebinarCosechaJulioPage() {
         <SessionAgenda />
         <Team />
         <VideoPodcast />
-        <SecurityBacking />
         <RegistrationForm />
       </main>
       <Footer />
