@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Reveal from "./ui/Reveal";
 import SectionLabel from "./ui/SectionLabel";
 import CTAButton from "./ui/CTAButton";
@@ -32,10 +33,9 @@ export default function ModelThesis() {
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mx-auto mt-6 max-w-xl text-base leading-relaxed text-cream-100/75">
-              La tesis de Cosecha Capital gira alrededor del limón persa y su
-              comercialización: no es un cultivo aislado, es una operación que
-              conecta tierra, producción y un mercado que ya existe. La sesión te
-              muestra cómo funciona por dentro y qué deberías evaluar.
+              El modelo gira alrededor del limón persa y su comercialización: no
+              es un cultivo aislado, es una operación que conecta tierra,
+              producción y un mercado que ya existe.
             </p>
           </Reveal>
         </div>
@@ -60,11 +60,71 @@ export default function ModelThesis() {
           </div>
         </Reveal>
 
+        {/* Quién es quién: Citrus Patrimonial + Cosecha Capital */}
+        <div className="mt-14 text-center">
+          <Reveal>
+            <h3 className="font-display text-xl font-extrabold uppercase tracking-tight text-cream-50 sm:text-2xl">
+              Dos partes, un mismo modelo
+            </h3>
+          </Reveal>
+        </div>
+
+        <div className="mt-8 grid grid-cols-1 gap-4 md:grid-cols-2">
+          <Reveal>
+            <div className="flex h-full flex-col rounded-3xl border border-white/10 bg-forest-800/40 p-7 sm:p-8">
+              <Image
+                src="/assets/logo-premium-reseller.webp"
+                alt="Citrus Patrimonial · Fideicomiso Citrus"
+                width={200}
+                height={200}
+                className="h-16 w-16 shrink-0"
+              />
+              <h4 className="mt-5 font-display text-lg font-extrabold uppercase tracking-tight text-cream-50">
+                Citrus Patrimonial
+              </h4>
+              <p className="mt-3 text-[15px] leading-relaxed text-cream-100/75">
+                Opera el modelo agrícola y su estructura fiduciaria (Fideicomiso
+                Citrus): tierra, producción de limón persa y los mecanismos de
+                respaldo.
+              </p>
+            </div>
+          </Reveal>
+
+          <Reveal delay={0.08}>
+            <div className="flex h-full flex-col rounded-3xl border border-citrus-500/25 bg-gradient-to-b from-forest-800/60 to-forest-900/40 p-7 sm:p-8">
+              <div className="flex h-16 items-center">
+                <Image
+                  src="/assets/logo-cosecha-white.png"
+                  alt="Cosecha Capital"
+                  width={220}
+                  height={80}
+                  className="h-9 w-auto"
+                />
+              </div>
+              <h4 className="mt-5 font-display text-lg font-extrabold uppercase tracking-tight text-cream-50">
+                Cosecha Capital
+              </h4>
+              <p className="mt-3 text-[15px] leading-relaxed text-cream-100/75">
+                Premium Reseller Partner de Citrus: conecta a los inversionistas
+                con la operación y acompaña cada paso del proceso.
+              </p>
+            </div>
+          </Reveal>
+        </div>
+
+        <Reveal delay={0.12}>
+          <p className="mx-auto mt-10 max-w-xl text-center text-base leading-relaxed text-cream-100/75">
+            Cómo encajan ambas, qué respalda al modelo y qué deberías evaluar lo
+            vemos a detalle en un <span className="text-citrus-400">webinar privado</span>{" "}
+            con cupo limitado.
+          </p>
+        </Reveal>
+
         <Reveal delay={0.15}>
-          <p className="mx-auto mt-8 max-w-xl text-center text-sm leading-relaxed text-cream-100/55">
-            Toda inversión implica riesgos. El objetivo de la sesión no es
-            prometer resultados, sino darte información y criterios para evaluar
-            el modelo con claridad.
+          <p className="mx-auto mt-4 max-w-xl text-center text-sm leading-relaxed text-cream-100/55">
+            Toda inversión implica riesgos. El objetivo no es prometer
+            resultados, sino darte información y criterios para evaluar el modelo
+            con claridad.
           </p>
         </Reveal>
 

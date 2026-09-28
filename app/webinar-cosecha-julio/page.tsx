@@ -33,9 +33,9 @@ export default function WebinarCosechaJulioPage() {
         <Hero />
         <ModelThesis />
         <SessionAgenda />
-        <SecurityBacking />
         <Team />
         <VideoPodcast />
+        <SecurityBacking />
         <RegistrationForm />
       </main>
       <Footer />
