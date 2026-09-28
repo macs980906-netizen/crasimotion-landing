@@ -3,33 +3,25 @@ import CTAButton from "./ui/CTAButton";
 import SectionLabel from "./ui/SectionLabel";
 
 const datos = [
-  { label: "Jueves 30 de julio", icon: "calendar" },
-  { label: "Online y en vivo", icon: "globe" },
-  { label: "Acceso gratuito", icon: "ticket" },
+  { label: "En vivo por Zoom", icon: "video" },
   { label: "Cupo limitado", icon: "users" },
+  { label: "Acceso con registro", icon: "ticket" },
 ] as const;
 
 const bullets = [
-  "Activos productivos reales",
-  "Producción agrícola orientada a exportación",
-  "Estructura fiduciaria y mecanismos de respaldo",
-  "Criterios para evaluar riesgo, plazo y liquidez",
+  "Operación agrícola real y estructurada",
+  "Producción orientada a exportación",
+  "Estructura fiduciaria de respaldo",
+  "Criterios para evaluar riesgo y perfil",
 ];
 
 function Icon({ name }: { name: string }) {
   const common = "h-4 w-4 shrink-0 text-citrus-400";
-  if (name === "calendar")
+  if (name === "video")
     return (
-      <svg className={common} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
-        <rect x="3" y="4.5" width="18" height="16" rx="2.5" />
-        <path d="M3 9h18M8 2.5v4M16 2.5v4" strokeLinecap="round" />
-      </svg>
-    );
-  if (name === "globe")
-    return (
-      <svg className={common} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6">
-        <circle cx="12" cy="12" r="9" />
-        <path d="M3 12h18M12 3c2.5 2.5 2.5 15 0 18M12 3c-2.5 2.5-2.5 15 0 18" />
+      <svg className={common} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">
+        <rect x="2.5" y="6" width="13" height="12" rx="2.5" />
+        <path d="m15.5 10 6-3.2v10.4l-6-3.2z" />
       </svg>
     );
   if (name === "ticket")
@@ -56,7 +48,7 @@ export default function Hero() {
       <div className="absolute inset-0 -z-10">
         <Image
           src="/assets/hero.webp"
-          alt="Plantación de limón persa al atardecer"
+          alt="Plantación de limón persa en el campo mexicano"
           fill
           priority
           sizes="100vw"
@@ -70,18 +62,18 @@ export default function Hero() {
       <div className="mx-auto w-full max-w-6xl px-5 pb-20 pt-32 sm:px-8 sm:pt-36 lg:pt-40">
         <div className="max-w-3xl">
           <div className="animate-[fadeUp_0.8s_ease-out_both]">
-            <SectionLabel>Clase en vivo gratuita</SectionLabel>
+            <SectionLabel>Sesión en vivo · por Zoom</SectionLabel>
           </div>
 
-          <h1 className="mt-7 font-display text-4xl font-medium leading-[1.08] tracking-tight text-cream-50 text-balance sm:text-5xl lg:text-6xl">
-            Hay inversiones que no viven en una pantalla.{" "}
-            <span className="text-citrus-400">Crecen en el campo mexicano.</span>
+          <h1 className="mt-7 font-display text-4xl font-extrabold uppercase leading-[0.98] tracking-tight text-cream-50 text-balance sm:text-5xl lg:text-[4.25rem]">
+            Invierte en el{" "}
+            <span className="text-citrus-400">campo mexicano</span>.
           </h1>
 
-          <p className="mt-6 max-w-2xl text-base leading-relaxed text-cream-100/80 sm:text-lg">
-            Conoce cómo funciona un modelo de inversión respaldado por activos
-            productivos agrícolas, qué riesgos debes evaluar y cómo saber si
-            puede integrarse a tu estrategia patrimonial.
+          <p className="mt-6 max-w-2xl text-base leading-relaxed text-cream-100/85 sm:text-lg">
+            Entérate de cómo funciona una operación agrícola real —tierra,
+            producción y exportación— y evalúa con información si puede formar
+            parte de tu estrategia patrimonial.
           </p>
 
           {/* Datos */}
@@ -104,7 +96,7 @@ export default function Hero() {
                 key={b}
                 className="flex items-center gap-2.5 text-sm text-cream-100/85"
               >
-                <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-gold-400" />
+                <span className="h-1.5 w-1.5 shrink-0 rounded-full bg-citrus-500" />
                 {b}
               </li>
             ))}
@@ -113,15 +105,16 @@ export default function Hero() {
           {/* CTAs */}
           <div className="mt-10 flex flex-col gap-3 sm:flex-row sm:items-center">
             <CTAButton href="#registro" size="lg">
-              Reservar mi lugar
+              Aparta tu lugar
             </CTAButton>
-            <CTAButton href="#que-aprenderas" variant="outline" size="lg">
-              Conocer la clase
+            <CTAButton href="#modelo" variant="outline" size="lg">
+              Conocer el modelo
             </CTAButton>
           </div>
 
-          <p className="mt-5 text-sm text-cream-100/55">
-            Registrarte no implica ningún compromiso de inversión.
+          <p className="mt-5 max-w-xl text-sm text-cream-100/55">
+            Un asesor te contactará para confirmar tu acceso. Registrarte no
+            implica ningún compromiso de inversión.
           </p>
         </div>
       </div>

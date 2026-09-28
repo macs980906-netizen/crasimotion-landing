@@ -54,36 +54,36 @@ export default function RegistrationForm() {
       <div className="relative mx-auto max-w-6xl px-5 sm:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <Reveal className="flex justify-center">
-            <SectionLabel>Registro gratuito</SectionLabel>
+            <SectionLabel>Aparta tu lugar</SectionLabel>
           </Reveal>
           <Reveal delay={0.05}>
-            <h2 className="mt-6 font-display text-3xl font-medium leading-tight tracking-tight text-cream-50 sm:text-4xl">
-              Reserva tu lugar en la clase en vivo
+            <h2 className="mt-6 font-display text-3xl font-extrabold uppercase leading-[1.02] tracking-tight text-cream-50 sm:text-4xl">
+              Aparta tu lugar con un asesor
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-4 text-base leading-relaxed text-cream-100/70">
-              Completa tus datos y recibe la confirmación, el acceso y los
-              recordatorios de la sesión.
+              Déjanos tus datos y un asesor te contactará para confirmar tu
+              acceso a la sesión en vivo por Zoom. El cupo es limitado.
             </p>
           </Reveal>
           <Reveal delay={0.12}>
             <div className="mt-6 inline-flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm text-cream-100/70">
               <span className="inline-flex items-center gap-2">
-                <span className="h-1.5 w-1.5 rounded-full bg-gold-400" />
-                Jueves 30 de julio
+                <span className="h-1.5 w-1.5 rounded-full bg-citrus-500" />
+                En vivo por Zoom
               </span>
               <span className="inline-flex items-center gap-2">
-                <span className="h-1.5 w-1.5 rounded-full bg-gold-400" />
-                Online y en vivo
-              </span>
-              <span className="inline-flex items-center gap-2">
-                <span className="h-1.5 w-1.5 rounded-full bg-gold-400" />
-                Acceso gratuito
-              </span>
-              <span className="inline-flex items-center gap-2">
-                <span className="h-1.5 w-1.5 rounded-full bg-gold-400" />
+                <span className="h-1.5 w-1.5 rounded-full bg-citrus-500" />
                 Cupo limitado
+              </span>
+              <span className="inline-flex items-center gap-2">
+                <span className="h-1.5 w-1.5 rounded-full bg-citrus-500" />
+                Acceso con registro
+              </span>
+              <span className="inline-flex items-center gap-2">
+                <span className="h-1.5 w-1.5 rounded-full bg-citrus-500" />
+                Un asesor te contacta
               </span>
             </div>
           </Reveal>
@@ -121,12 +121,13 @@ export default function RegistrationForm() {
 
             <div className="mx-auto mt-6 max-w-[540px] space-y-3 text-center">
               <p className="text-[13px] leading-relaxed text-cream-100/55">
-                Al registrarte recibirás información relacionada únicamente con
-                esta clase y su seguimiento. Revisa tu bandeja de spam en caso
-                de que no te llegue la información.
+                Al registrarte, un asesor te contactará con la información de
+                acceso y el seguimiento de la sesión. Revisa tu bandeja de spam
+                en caso de que no te llegue la información.
               </p>
               <p className="text-[13px] leading-relaxed text-cream-100/55">
-                Registrarte no representa un compromiso de inversión.
+                Registrarte no representa un compromiso de inversión. Toda
+                inversión implica riesgos.
               </p>
               <p className="text-[13px] leading-relaxed text-cream-100/55">
                 <a

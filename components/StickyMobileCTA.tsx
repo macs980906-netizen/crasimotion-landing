@@ -55,7 +55,7 @@ export default function StickyMobileCTA() {
           href="#registro"
           className="flex w-full items-center justify-center gap-2 rounded-full bg-citrus-500 px-6 py-3.5 text-sm font-semibold text-forest-950 shadow-[0_10px_30px_-10px_rgba(141,198,63,0.7)]"
         >
-          Reservar mi lugar
+          Aparta tu lugar
           <span>→</span>
         </a>
       </div>

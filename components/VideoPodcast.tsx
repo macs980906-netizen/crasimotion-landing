@@ -9,10 +9,10 @@ export default function VideoPodcast() {
       <div className="mx-auto max-w-5xl px-5 sm:px-8">
         <div className="mx-auto max-w-2xl text-center">
           <Reveal className="flex justify-center">
-            <SectionLabel>Antes de la clase</SectionLabel>
+            <SectionLabel>Antes de la sesión</SectionLabel>
           </Reveal>
           <Reveal delay={0.05}>
-            <h2 className="mt-6 font-display text-3xl font-medium leading-tight tracking-tight text-cream-50 text-balance sm:text-4xl">
+            <h2 className="mt-6 font-display text-3xl font-extrabold uppercase leading-[1.02] tracking-tight text-cream-50 text-balance sm:text-4xl">
               Conoce la visión detrás del modelo
             </h2>
           </Reveal>
@@ -34,7 +34,7 @@ export default function VideoPodcast() {
 
         <Reveal delay={0.15} className="mt-12 flex justify-center">
           <CTAButton href="#registro" size="lg">
-            Reservar mi lugar
+            Aparta tu lugar
           </CTAButton>
         </Reveal>
       </div>

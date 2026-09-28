@@ -36,7 +36,7 @@ export default function Footer() {
               href="#registro"
               className="text-sm text-cream-100/70 transition-colors hover:text-citrus-400"
             >
-              Reservar mi lugar
+              Aparta tu lugar
             </a>
           </nav>
         </div>

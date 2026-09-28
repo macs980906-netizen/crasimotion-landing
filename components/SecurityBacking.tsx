@@ -56,14 +56,14 @@ export default function SecurityBacking() {
             <SectionLabel tone="light">Estructura del modelo</SectionLabel>
           </Reveal>
           <Reveal delay={0.05}>
-            <h2 className="mt-6 font-display text-3xl font-medium leading-tight tracking-tight text-balance sm:text-4xl lg:text-[2.75rem]">
-              Conoce qué función cumple cada mecanismo de respaldo
+            <h2 className="mt-6 font-display text-3xl font-extrabold uppercase leading-[1.02] tracking-tight text-balance sm:text-4xl lg:text-[2.75rem]">
+              Qué función cumple cada mecanismo de respaldo
             </h2>
           </Reveal>
           <Reveal delay={0.1}>
             <p className="mt-5 text-base leading-relaxed text-forest-800/70">
-              Durante la clase explicaremos cómo se organiza cada componente y
-              cuáles son sus alcances dentro del modelo.
+              En la sesión explicamos cómo se organiza cada componente y cuáles
+              son sus alcances dentro del modelo.
             </p>
           </Reveal>
         </div>
@@ -97,7 +97,7 @@ export default function SecurityBacking() {
 
         <Reveal delay={0.1} className="mt-12 flex justify-center">
           <CTAButton href="#registro" size="lg">
-            Reservar mi lugar
+            Aparta tu lugar
           </CTAButton>
         </Reveal>
       </div>

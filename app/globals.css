@@ -2,7 +2,8 @@
 
 @theme {
   --font-sans: var(--font-inter);
-  --font-display: var(--font-fraunces);
+  --font-display: var(--font-montserrat);
+  --font-serif: var(--font-fraunces);
 
   /* Deep institutional greens */
   --color-forest-950: #06120c;
@@ -12,15 +13,20 @@
   --color-forest-600: #1e5a40;
   --color-forest-500: #267a55;
 
-  /* Citrus accents */
+  /* Citrus / lime accents (brand social identity) */
   --color-citrus-600: #6fa524;
   --color-citrus-500: #8dc63f;
   --color-citrus-400: #a8d35f;
+  --color-lime-400: #a4e02b;
 
   /* Soft gold */
   --color-gold-500: #c2a14e;
   --color-gold-400: #d4bd7a;
   --color-gold-300: #e6d6a8;
+
+  /* Mexican-flag red — USE ONLY in a "México / campo mexicano" context */
+  --color-flag-green: #0f8a3c;
+  --color-flag-red: #d1252b;
 
   /* Light / cream */
   --color-cream-50: #f8f6ef;

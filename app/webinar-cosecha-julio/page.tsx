@@ -1,27 +1,24 @@
 import type { Metadata } from "next";
 import Header from "@/components/Header";
 import Hero from "@/components/Hero";
-import AlternativeIntro from "@/components/AlternativeIntro";
-import WhatYouLearn from "@/components/WhatYouLearn";
+import ModelThesis from "@/components/ModelThesis";
+import SessionAgenda from "@/components/SessionAgenda";
 import SecurityBacking from "@/components/SecurityBacking";
-import Speakers from "@/components/Speakers";
+import Team from "@/components/Team";
 import VideoPodcast from "@/components/VideoPodcast";
-import RiskInfo from "@/components/RiskInfo";
-import IsItForYou from "@/components/IsItForYou";
 import RegistrationForm from "@/components/RegistrationForm";
 import Footer from "@/components/Footer";
 import StickyMobileCTA from "@/components/StickyMobileCTA";
 
 export const metadata: Metadata = {
-  title:
-    "Clase en vivo: Inversión en activos productivos agrícolas | Cosecha Capital",
+  title: "Invierte en el campo mexicano · Sesión en vivo | Cosecha Capital",
   description:
-    "Conoce cómo funciona un modelo de inversión respaldado por activos productivos del campo mexicano, sus riesgos, estructura y criterios de evaluación. Clase en vivo gratuita el 30 de julio.",
+    "Conoce cómo funciona una operación agrícola real, estructurada y orientada a exportación, y evalúa si encaja con tu estrategia patrimonial. Sesión en vivo por Zoom, cupo limitado.",
   alternates: { canonical: "/webinar-cosecha-julio" },
   openGraph: {
-    title: "Hay inversiones que crecen en el campo mexicano",
+    title: "Invierte en el campo mexicano",
     description:
-      "Regístrate a la clase en vivo gratuita de Cosecha Capital y aprende cómo evaluar un modelo respaldado por activos productivos agrícolas.",
+      "Regístrate a la sesión en vivo de Cosecha Capital y conoce cómo evaluar una operación agrícola respaldada por producción real y orientada a exportación.",
     url: "/webinar-cosecha-julio",
     type: "website",
     images: [{ url: "/assets/hero.webp", width: 1400, height: 2488 }],
@@ -34,13 +31,11 @@ export default function WebinarCosechaJulioPage() {
       <Header />
       <main className="flex-1">
         <Hero />
-        <AlternativeIntro />
-        <IsItForYou />
-        <WhatYouLearn />
-        <Speakers />
-        <VideoPodcast />
+        <ModelThesis />
+        <SessionAgenda />
         <SecurityBacking />
-        <RiskInfo />
+        <Team />
+        <VideoPodcast />
         <RegistrationForm />
       </main>
       <Footer />

@@ -7,7 +7,7 @@ import TrackLead from "@/components/TrackLead";
 export const metadata: Metadata = {
   title: "Registro confirmado · Cosecha Capital",
   description:
-    "Tu lugar en la clase en vivo de Cosecha Capital ha quedado registrado. Revisa tu correo para los detalles de acceso.",
+    "Tu registro para la sesión en vivo de Cosecha Capital ha quedado hecho. Un asesor te contactará con los detalles de acceso.",
   robots: { index: false, follow: false },
 };
 
@@ -70,24 +70,25 @@ export default function GraciasPage() {
             </span>
           </div>
 
-          <h1 className="mt-8 font-display text-3xl font-medium leading-tight tracking-tight text-cream-50 sm:text-4xl">
+          <h1 className="mt-8 font-display text-3xl font-extrabold uppercase leading-[1.02] tracking-tight text-cream-50 sm:text-4xl">
             Gracias por tu registro
           </h1>
 
           <p className="mx-auto mt-5 max-w-md text-base leading-relaxed text-cream-100/70">
-            Tu lugar en la clase del 30 de julio ya quedó reservado. Te enviamos
-            un correo con más información y los datos de acceso. Si no lo
-            encuentras, revisa tu bandeja de spam o correo no deseado.
+            Tu lugar quedó apartado. Un asesor te contactará con los detalles de
+            acceso a la sesión en vivo por Zoom. También te enviamos información
+            por correo: si no la encuentras, revisa tu bandeja de spam o correo
+            no deseado.
           </p>
 
           <div className="mt-6 inline-flex flex-wrap items-center justify-center gap-x-5 gap-y-2 text-sm text-cream-100/70">
             <span className="inline-flex items-center gap-2">
-              <span className="h-1.5 w-1.5 rounded-full bg-gold-400" />
-              Jueves 30 de julio
+              <span className="h-1.5 w-1.5 rounded-full bg-citrus-500" />
+              En vivo por Zoom
             </span>
             <span className="inline-flex items-center gap-2">
-              <span className="h-1.5 w-1.5 rounded-full bg-gold-400" />
-              Online y en vivo
+              <span className="h-1.5 w-1.5 rounded-full bg-citrus-500" />
+              Un asesor te contacta
             </span>
           </div>
 

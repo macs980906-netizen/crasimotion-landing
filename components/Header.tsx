@@ -42,7 +42,7 @@ export default function Header() {
           href="#registro"
           className="group inline-flex items-center gap-2 rounded-full bg-citrus-500 px-4 py-2.5 text-xs font-medium tracking-wide text-forest-950 shadow-[0_8px_24px_-10px_rgba(141,198,63,0.7)] transition-all duration-300 hover:bg-citrus-400 sm:px-6 sm:py-3 sm:text-sm"
         >
-          Reservar mi lugar
+          Aparta tu lugar
           <span className="transition-transform duration-300 group-hover:translate-x-1">
             →
           </span>
